@@ -10,7 +10,7 @@ export class DataService {
   constructor(private __http: Http) { }
 
   getPrices() {
-    return this.__http.get('https://min-api.cryptocompare.com/data/pricemulti?fsyms=ETH,DASH&tsyms=BTC,USD,EUR')
+    return this.__http.get('https://min-api.cryptocompare.com/data/pricemulti?fsyms=BTC,ETH,IOT&tsyms=USD')
     .map(result => this.result = result.json());
   }
 }
