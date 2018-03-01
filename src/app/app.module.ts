@@ -13,7 +13,8 @@ import { HttpModule } from '@angular/http';
     AppComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    HttpModule
   ],
   providers: [DataService],
   bootstrap: [AppComponent]
